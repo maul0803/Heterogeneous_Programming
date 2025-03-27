@@ -1,0 +1,6 @@
+#Python3.10
+numpy
+matplotlib
+pandas
+torch
+torchvision
