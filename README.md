@@ -25,7 +25,19 @@ Pour créer l'environement sur le finisterrae et s'y connecter:
 
 ### 2. Quantification
 
+#### 2.1 Dynamique
+
 La quantification s'est révélée plus complexe que prévu. En effet, il existe trois types de quantification, dont l'une est dite dynamique. Cette dernière est la plus simple à mettre en place, mais malheureusement, elle ne peut pas être appliquée efficacement à notre modèle. En effet, comme précisé dans la documentation, les couches convolutives (conv layers) ne sont pas affectées par cette méthode de quantification.
 
 ![Quantification statique](https://raw.githubusercontent.com/maul0803/Heterogeneous_Programming/main/pas_dynamique.png)
+
+#### 2.2 Statique
+
+### 2.2 Quantification statique  
+
+En théorie, cette méthode de quantification est applicable, bien que légèrement plus complexe à mettre en place. Cependant, malgré tous les efforts déployés, le modèle devient inutilisable dès que l'on tente de l'appliquer avec la commande suivante :  
+
+```python
+model_quantized = quant.convert(model_prepared)
+```
 
