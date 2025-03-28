@@ -26,4 +26,5 @@ Pour créer l'environement sur le finisterrae et s'y connecter:
 
 La quantification s'est révélée plus complexe que prévu. En effet, il existe trois types de quantification, dont l'une est dite dynamique. Cette dernière est la plus simple à mettre en place, mais malheureusement, elle ne peut pas être appliquée efficacement à notre modèle. En effet, comme précisé dans la documentation, les couches convolutives (conv layers) ne sont pas affectées par cette méthode de quantification.
 
-![Guide d'intégration](https://raw.githubusercontent.com/mon-utilisateur/mon-repo/main/images/guide.png)
+![Quantification statique](https://raw.githubusercontent.com/maul0803/Heterogeneous_Programming/main/pas_dynamique.png)
+
