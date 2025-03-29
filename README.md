@@ -53,21 +53,19 @@ La quantification s'est révélée plus complexe que prévu. En effet, il existe
 
 ![Quantification statique](images/pas_dynamique.png)
 
-#### 2.2 Statique
-
-### 2.2 Quantification statique  
+#### 2.2 Quantification statique  
 
 En théorie, cette méthode de quantification est applicable, bien que légèrement plus complexe à mettre en place. Cependant, malgré tous les efforts déployés, le modèle devient inutilisable dès que l'on tente de l'appliquer avec la commande suivante :  
 
 ```python
 model_quantized = quant.convert(model_prepared)
 ```
-#### 3. TensorRT
+### 3. TensorRT
 Afin d'améliorer les performances du modèle sur GPU, la librairie TorchRT a été utilisé.  
 Cette librairie permet de créer des modèles optimisés en utilisant nottament:
 - La quantification  
 - La fusion des opérations : plusieurs opérations qui se produisent normalement séquentiellement sont fusionnées en une seule opération  
-### 3. Résultats
+#### 3.1 Résultats
 L'utilisation de cette librairie a permis les résultats suivants:
 - l'accuracy sur le dataset de validation n'a pas changé ce qui signifie que le modèle a conservé ses performances
 - la taille du modèle a augmenté passant de 29MB à 41MB.  
