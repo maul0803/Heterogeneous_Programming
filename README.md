@@ -62,4 +62,13 @@ En théorie, cette méthode de quantification est applicable, bien que légèrem
 ```python
 model_quantized = quant.convert(model_prepared)
 ```
-
+#### 3. TensorRT
+Afin d'améliorer les performances du modèle sur GPU, la librairie TorchRT a été utilisé.  
+Cette librairie permet de créer des modèles optimisés en utilisant nottament:
+- La quantification  
+- La fusion des opérations : plusieurs opérations qui se produisent normalement séquentiellement sont fusionnées en une seule opération  
+### 3. Résultats
+L'utilisation de cette librairie a permis les résultats suivants:
+- l'accuracy sur le dataset de validation n'a pas changé ce qui signifie que le modèle a conservé ses performances
+- la taille du modèle a augmenté passant de 29MB à 41MB.  
+- le temps d'inférence par image est passé de 0.0066 secondes à 0.0003 secondes ce qui représente un speedup de 22.

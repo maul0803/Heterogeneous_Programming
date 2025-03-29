@@ -1,11 +1,7 @@
-#Python3.7
+#Python3.10
 numpy
 matplotlib
 pandas
 torch
 torchvision
-nvidia-tensorrt==7.2.* --index-url https://pypi.ngc.nvidia.com
-
-nvidia-pyindex
-onnx
-tensorrt
+torch_tensorrt
