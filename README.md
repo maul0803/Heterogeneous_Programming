@@ -51,7 +51,7 @@ Supprimer les poids les plus faibles du modèle en entier plutôt que par couche
 
 La quantification s'est révélée plus complexe que prévu. En effet, il existe trois types de quantification, dont l'une est dite dynamique. Cette dernière est la plus simple à mettre en place, mais malheureusement, elle ne peut pas être appliquée efficacement à notre modèle. En effet, comme précisé dans la documentation, les couches convolutives (conv layers) ne sont pas affectées par cette méthode de quantification.
 
-![Quantification statique](https://raw.githubusercontent.com/maul0803/Heterogeneous_Programming/main/images/pas_dynamique.png)
+![Quantification statique](images/pas_dynamique.png)
 
 #### 2.2 Statique
 
