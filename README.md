@@ -62,8 +62,8 @@ model_quantized = quant.convert(model_prepared)
 ```
 ### 3. TensorRT
 Afin d'améliorer les performances du modèle sur GPU, la librairie TorchRT a été utilisé.  
-Cette librairie permet de créer des modèles optimisés en utilisant nottament:
-- La quantification  
+Cette librairie permet de créer des modèles optimisés en utilisant notamment:
+- La quantification, si l'on autorise l'utilisation de int8, cela n'a pas été fait dans le code en raison d'une erreur.  
 - La fusion des opérations : plusieurs opérations qui se produisent normalement séquentiellement sont fusionnées en une seule opération  
 #### 3.1 Résultats
 L'utilisation de cette librairie a permis les résultats suivants:
