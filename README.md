@@ -1,5 +1,3 @@
-# Rendu pour le 4 Avril.
-
 
 # Heterogeneous_Programming
 
